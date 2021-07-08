@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Navbar from '../components/Navbar/Navbar'
 import Home from './Home/Home'
+import RenderExample from './RenderExample/RenderExample'
 import UseCallbackPage from './UseCallbackPage/UseCallbackPage'
 import UseContextPage from './UseContextPage/UseContextPage'
 import UseEffectPage from './UseEffectPage/UseEffectPage'
@@ -41,6 +42,9 @@ const Routes = () => {
             </Route>
             <Route exact path="/use-ref">
                 <UseRefPage/>
+            </Route>
+            <Route exact path="/render-example">
+                <RenderExample/>
             </Route>
         </BrowserRouter>
     )
